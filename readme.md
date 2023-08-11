@@ -10,10 +10,16 @@ The Vehicle API is a Node.js application built using the Express.js framework. I
 docker build -t motorway-test-backend:latest .
 ```
 
-- Run Database
+- Run Database Container
 
 ```
 docker compose up -d
+```
+
+- Stop Database Container
+
+```
+docker compose down
 ```
 
 - Build Project
@@ -28,6 +34,12 @@ npm install --save-dev
 
 ```
 node index.js
+```
+
+- Test Api via Curl
+
+```
+curl http://localhost:3000/vehicles/3/2022-09-12T10:00:00Z
 ```
 
 - Run Tests
