@@ -1,5 +1,37 @@
-Install requirements:
+# Vehicle API
 
-- docker (https://docs.docker.com/get-docker/)
+The Vehicle API is a Node.js application built using the Express.js framework. It provides an API for retrieving vehicle information and state based on the provided vehicle ID and timestamp.
 
-To initialize this project, run `docker compose up` from the root of this project. This will build and seed the database. By default the database runs on port `5432` and is also exposed on `5432`, if you want to change this you can update `docker-compose.yml`.
+## Setup and Usage
+
+- Build Docker Image
+
+```
+docker build -t motorway-test-backend:latest .
+```
+
+- Run Database
+
+```
+docker compose up -d
+```
+
+- Build Project
+
+```
+npm install --save-dev
+```
+
+- Change Config File **.env.dev** as **.env**
+
+- Run Project
+
+```
+node index.js
+```
+
+- Run Tests
+
+```
+npx mocha tests/vehicleTest.js
+```
