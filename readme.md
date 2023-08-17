@@ -63,34 +63,38 @@ For a production-grade scalable microservice architecture on AWS, you can consid
    - Use Amazon Cognito for user authentication and access control.
    - Utilize AWS Identity and Access Management (IAM) for fine-grained permission management.
 
-2. **Database:**
+2. **Sensitive Secrets Management:**
+
+Utilize AWS Secrets Manager for securely managing sensitive information such as database credentials, API keys, and more.
+
+3. **Database:**
 
    - AWS RDS (Relational Database Service) for a managed relational database.
    - Amazon DynamoDB for a NoSQL database that scales automatically.
 
-3. **Caching:**
+4. **Caching:**
 
    - Amazon ElastiCache for caching with Redis or Memcached.
 
-4. **Service Discovery:**
+5. **Service Discovery:**
 
    - AWS Cloud Map for dynamic service discovery and naming.
 
-5. **Event Logging & Tracing:**
+6. **Event Logging & Tracing:**
 
    - Amazon CloudWatch for logging and monitoring.
    - AWS X-Ray for distributed tracing and monitoring application performance.
 
-6. **Inter-Service Communication:**
+7. **Inter-Service Communication:**
 
    - Use Amazon API Gateway for creating RESTful APIs to expose your microservices.
    - AWS App Runner or AWS Lambda for running serverless microservices.
 
-7. **Event Tracing:**
+8. **Event Tracing:**
 
    - Implement Amazon EventBridge (formerly CloudWatch Events) for event-driven architecture.
 
-8. **Scaling:**
+9. **Scaling:**
    - Utilize AWS Auto Scaling to automatically adjust the number of instances based on traffic.
    - Consider AWS Elastic Load Balancing for distributing traffic across instances.
 
