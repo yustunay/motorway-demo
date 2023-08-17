@@ -65,7 +65,7 @@ For a production-grade scalable microservice architecture on AWS, you can consid
 
 2. **Sensitive Secrets Management:**
 
-Utilize AWS Secrets Manager for securely managing sensitive information such as database credentials, API keys, and more.
+   - Utilize AWS Secrets Manager for securely managing sensitive information such as database credentials, API keys, and more.
 
 3. **Database:**
 
