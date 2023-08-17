@@ -2,6 +2,7 @@ const NodeCache = require("node-cache");
 const pool = require("../db/postgres");
 const logger = require("../utils/logger");
 const VehicleServiceException = require("../exceptions/vehicleServiceException");
+const { query } = require("../db/scripts");
 
 const cache = new NodeCache({ stdTTL: 60 }); // Cache TTL set to 60 seconds
 
@@ -17,18 +18,13 @@ async function getVehicleState(vehicleId, timestamp) {
     logger.debug(`Returning from database for key ${cacheKey}`);
   }
 
-  const query = `
-    SELECT "state"
-    FROM "stateLogs"
-    WHERE "vehicleId" = $1 AND "timestamp" <= $2
-    ORDER BY "timestamp" DESC
-    LIMIT 1;
-  `;
-
   let client;
   try {
     client = await pool.connect();
-    const result = await pool.query(query, [vehicleId, timestamp]);
+    const result = await pool.query(
+      query.GET_STATE_WITH_VEHICLE_ID_AND_TIMESTAMP,
+      [vehicleId, timestamp]
+    );
     const state = result.rows[0]?.state || null;
 
     // Cache the response

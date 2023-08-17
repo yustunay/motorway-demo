@@ -42,6 +42,7 @@ npx mocha tests/vehicleTest.js
 - Added morgan library for express logging
 - Updated run scripts for dev and test
 - Added logs and changed log level to debug
+- Carried database scripts to scripts file
 
 # Considerations for a Production Environment
 
