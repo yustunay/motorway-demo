@@ -54,7 +54,7 @@ npx mocha tests/vehicleTest.js
 - [ ] Consider using a process manager like PM2 to manage multiple instances of the API for better reliability and scalability.
 - [ ] Use a load balancer
 
-# Proposal For a Production-Grade Scalable Microservice Architecture on AWS
+## Proposal For a Production-Grade Scalable Microservice Architecture on AWS
 
 For a production-grade scalable microservice architecture on AWS, you can consider the following services and approaches:
 
