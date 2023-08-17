@@ -52,6 +52,8 @@ npx mocha tests/vehicleTest.js
 - [x] Implement error handling to handle potential issues with the database connection or query.
 - [x] Use environment variables to store sensitive information like database credentials.
 - [x] Implement logging to track API requests and errors.
+- [x] Cache request results
+- [x] Write unit tests and integration tests to ensure the API functions as expected.
 - [ ] Set up proper security measures, such as authentication and authorization, depending on your application's requirements.
 - [ ] Consider using a process manager like PM2 to manage multiple instances of the API for better reliability and scalability.
-- [x] Write unit tests and integration tests to ensure the API functions as expected.
+- [ ] Use a load balancer
