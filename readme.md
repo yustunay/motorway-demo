@@ -49,9 +49,9 @@ npx mocha tests/vehicleTest.js
 
 # Considerations for a Production Environment
 
-- [ ] Implement error handling to handle potential issues with the database connection or query.
-- [ ] Use environment variables to store sensitive information like database credentials.
-- [ ] Implement logging to track API requests and errors.
+- [x] Implement error handling to handle potential issues with the database connection or query.
+- [x] Use environment variables to store sensitive information like database credentials.
+- [x] Implement logging to track API requests and errors.
 - [ ] Set up proper security measures, such as authentication and authorization, depending on your application's requirements.
 - [ ] Consider using a process manager like PM2 to manage multiple instances of the API for better reliability and scalability.
-- [ ] Write unit tests and integration tests to ensure the API functions as expected.
+- [x] Write unit tests and integration tests to ensure the API functions as expected.
