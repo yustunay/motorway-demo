@@ -36,16 +36,12 @@ node index.js
 npx mocha tests/vehicleTest.js
 ```
 
-# Updates
+# Updates / 17.08.2023
 
-1- Added nodemon library to detect when file changes on development
-2- Added morgan library for express logging
-3- Updated run scripts for dev and test
-4- Added logs and changed log level to debug
-
-# Missing Features
-
-1- User service for login & user registration with using JWT Authentication
+- Added nodemon library to detect when file changes on development
+- Added morgan library for express logging
+- Updated run scripts for dev and test
+- Added logs and changed log level to debug
 
 # Considerations for a Production Environment
 
