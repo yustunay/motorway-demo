@@ -1,5 +1,5 @@
 const { Pool } = require("pg");
-const logger = require("../utils/logger"); // Make sure to import your logger module
+const logger = require("../utils/logger");
 const config = require("../config/config");
 
 const pool = new Pool({

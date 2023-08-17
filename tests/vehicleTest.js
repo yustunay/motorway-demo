@@ -3,7 +3,6 @@ const chaiHttp = require("chai-http");
 const app = require("../src/app");
 const sinon = require("sinon");
 const pool = require("../src/db/postgres");
-const vehicleService = require("../src/services/vehicleService");
 
 chai.use(chaiHttp);
 const expect = chai.expect;
@@ -55,7 +54,6 @@ describe("Vehicle API", () => {
           expect(res).to.have.status(500);
           expect(res.body).to.have.property("error", "Database error");
 
-          // Restore the original behavior of the query function
           queryStub.restore();
 
           done();
