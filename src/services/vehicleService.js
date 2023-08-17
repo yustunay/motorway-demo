@@ -11,7 +11,10 @@ async function getVehicleState(vehicleId, timestamp) {
   // Try to get the response from cache
   const cachedResponse = cache.get(cacheKey);
   if (cachedResponse !== undefined) {
+    logger.debug(`Returning from cache for key ${cacheKey}`);
     return cachedResponse;
+  } else {
+    logger.debug(`Returning from database for key ${cacheKey}`);
   }
 
   const query = `

@@ -5,6 +5,7 @@ const VehicleServiceException = require("../exceptions/vehicleServiceException")
 
 async function getVehicleState(req, res) {
   const { vehicleId, timestamp } = req.params;
+
   const parsedTimestamp = moment.utc(timestamp);
 
   try {
